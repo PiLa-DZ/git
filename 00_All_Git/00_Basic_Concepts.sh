@@ -1,4 +1,4 @@
-project/.git # Git Database
+.git # Git Database
 .gitignore
 git init # Initialization
 # Local Machine <--> the Remote Server

@@ -1,17 +1,4 @@
 # ======================================================
-# Local Machine <--> the Remote Server
-# ======================================================
-git clone URL
-git init # Initialization
-git status
-git add .
-git commit -m "msg"
-
-git fetch # (Remote → Local (Info only))
-git pull  # (Remote → Local (Update))
-git push  # (Local  → Remote)
-
-# ======================================================
 # git reset `The Undo`
 # ------------------------------------------------------
 ## Soft
