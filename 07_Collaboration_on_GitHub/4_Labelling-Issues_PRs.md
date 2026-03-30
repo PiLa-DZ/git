@@ -1,5 +1,7 @@
 # Labelling Issues PRs
 
+# Labelling_Issues_PRs
+
 In a busy repository
 like the one you're building for your student management app
 Labels are the "DNA" of your project management.
@@ -118,7 +120,10 @@ You can use the GitHub search bar to filter your view:
 
 ## Backup from roadmap.sh
 
-On GitHub, labels are a way to categorize issues and pull requests (PRs) by topic, priority, or other criteria. Some common labels used are:
+On GitHub,
+labels are a way to categorize issues and pull requests (PRs) by topic,
+priority, or other criteria.
+Some common labels used are:
 
 Bug
 Duplicate

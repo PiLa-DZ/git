@@ -79,7 +79,7 @@ This is a huge advantage for a terminal user:
   Create a \_Sidebar.md file to keep navigation consistent across all pages.
 
 - Inter-linking:
-  Use [[Page Name]] to quickly link between different Wiki pages.
+  Use `[[Page Name]]` to quickly link between different Wiki pages.
 
 - Code Snippets:
   Use full syntax highlighting for complex Express middleware examples.
