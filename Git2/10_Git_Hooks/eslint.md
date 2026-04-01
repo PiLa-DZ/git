@@ -25,6 +25,13 @@ so you can just type npm run lint:
 }
 ```
 
+## The Final Piece: lint-staged
+
+As a backend dev,
+you’ll notice that `npm run lint` gets slower
+as your project grows.
+If you change 1 file, why lint all 100 files?
+
 ## Integration with Neovim
 
 Since you use LazyVim,

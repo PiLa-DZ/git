@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "🚀 Preparing to push to GitHub..."
+echo "🧪 Running full test suite. This might take a moment..."
+
+# Run your test command (e.g., npm test)
+npm test
+
+# Capture the exit code
+status=$?
+
+if [ $status -ne 0 ]; then
+    echo "--------------------------------------------------"
+    echo "❌ TESTS FAILED! Push aborted."
+    echo "Fix your logic before sharing code with the team."
+    echo "--------------------------------------------------"
+    exit 1
+fi
+
+echo "✅ All tests passed! Proceeding with push..."
+exit 0

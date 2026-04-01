@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "🔍 Running pre-commit checks..."
+
+# Run your linter or compiler check
+# Replace 'npm run lint' with whatever command you use to check your code
+# npm run lint
+npx eslint .
+
+# Store the exit code of the previous command
+status=$?
+
+if [ $status -ne 0 ]; then
+  echo "❌ Linting failed! Fix the errors before committing."
+  exit 1
+fi
+
+echo "✅ All checks passed. Committing now..."
+exit 0
