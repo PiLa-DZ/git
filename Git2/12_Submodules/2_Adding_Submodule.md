@@ -20,12 +20,12 @@ add command followed by the URL of the repository you want to include.
 Run this in your project root:
 
 ```bash
-git submodule add https://github.com/yourfriend/shared-types.git modules/types
+git submodule add https://github.com/yourfriend/shared-types.git modules/repo_name
 ```
 
 - The URL: Where the code lives on GitHub.
 
-- The Path (modules/types):
+- The Path (modules/repo_name):
   This tells Git: "Create a folder here and put the submodule inside it."
   If you don't provide a path, Git will just use the name of the repository.
 
