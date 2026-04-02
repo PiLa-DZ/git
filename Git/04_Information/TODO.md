@@ -16,8 +16,6 @@
 
 ## git log options
 
-git log is a command in Git that shows the commit history of your repository. It provides a detailed view of all commits, including their hashes, authors, dates, and messages.
-
 Here are some common git log options:
 
 -2: Only show the last two commits.

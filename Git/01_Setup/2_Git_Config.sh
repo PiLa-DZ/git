@@ -1,6 +1,6 @@
-nvim ~/.gitconfig        # Global Config (--global) # Your user account (all your repos).
-nvim project/.git/config # Local Config (--local) # Only the current folder (repo).
-nvim /etc/gitconfig      # System Config (--system) # Every user on the entire OS.
+nvim ~/.gitconfig        # Global Config (--global) --> Your user account (all your repos).
+nvim project/.git/config # Local Config (--local) ----> Only the current folder (repo).
+nvim /etc/gitconfig      # System Config (--system) --> Every user on the entire OS.
 
 # Navigate Config ==============================================
 git config --list
