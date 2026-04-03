@@ -4,8 +4,9 @@ nvim /etc/gitconfig      # System Config (--system) --> Every user on the entire
 
 # Navigate Config ==============================================
 git config --list
-git config --global --list # List all Global config
-git config --global --edit # Open in Editor
+git config --list --show-origin # The --show-origin flag is great because it tells you exactly where the setting is saved (e.g., ~/.gitconfig).
+git config --global --list      # List all Global config
+git config --global --edit      # Open in Editor
 
 # User Info ====================================================
 git config --global user.name "Nabil"

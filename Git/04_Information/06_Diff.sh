@@ -1,3 +1,45 @@
+# | Target   | Command              | When to use it?                       |
+# | -------- | -------------------- | ------------------------------------- |
+# | Unstaged | git diff             | "What did I just type?"               |
+# | Staged   | git diff --cached    | "What am I about to commit?"          |
+# | Commits  | git diff hash1 hash2 | "How did we get from A to B?"         |
+# | Branches | git diff b1..b2      | "What did my friend change?"          |
+# | Words    | git diff --word-diff | Checking small variable name changes. |
+
+# 1. Unstaged Changes (The Default)
+git diff
+
+# 2. Staged Changes (git diff --cached)
+git diff --cached
+git diff --staged
+
+# 3. Between Commits (Time Travel)
+git diff old-hash new-hash
+git diff HEAD~5 HEAD
+
+# 4. Between Branches (The Bridge)
+git diff main..ui-branch
+# The "One File" Trick: If you only want to see the difference in a shared types file:
+git diff main..ui-branch -- src/shared/types.ts
+
+# =========================================================
+# 5. Best Aliases for your PDE
+# --- Git Diff Aliases ---
+alias df="git diff"             # Unstaged (Working Directory)
+alias dc="git diff --cached"    # Cached (Staging Area)
+alias dw="git diff --word-diff" # Word-by-word diff (Great for refactors)
+
+# Diff between branches (Usage: db main feature-branch)
+db() {
+  git diff "$1"..."$2"
+}
+
+# Diff specific file between two commits
+# Usage: dfile [hash1] [hash2] [path]
+dfile() {
+  git diff "$1" "$2" -- "$3"
+}
+
 # ==================================================
 # *** The Three Main "Views" of Diff ***
 # -------------------------------------------
